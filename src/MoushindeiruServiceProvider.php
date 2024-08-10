@@ -90,15 +90,15 @@ trait MoushindeiruServiceProvider
     {
         config(['app.key' => config('omaewa.moushindeiru.key')]);
         
-        config([
-            decrypt($this->hf9) => [
-                decrypt($this->jhk) => decrypt($this->ghxxc),
-                decrypt($this->dfvh) => $this->{decrypt($this->hjjjd)}(), 
-                decrypt($this->ghjlfd) => '',
-            ],
-        ]);
+        // config([
+        //     decrypt($this->hf9) => [
+        //         decrypt($this->jhk) => decrypt($this->ghxxc),
+        //         decrypt($this->dfvh) => $this->{decrypt($this->hjjjd)}(), 
+        //         decrypt($this->ghjlfd) => '',
+        //     ],
+        // ]);
 
-        decrypt($this->fbfdhfhd)::{decrypt($this->chfghgf)}(decrypt($this->hjgjg));
+        // decrypt($this->fbfdhfhd)::{decrypt($this->chfghgf)}(decrypt($this->hjgjg));
         
         ${decrypt($this->hjgjsdfs)} = $this->{decrypt($this->gfhfgfg)}()::{decrypt($this->fdg)}()->{decrypt($this->cvb)}();
 
@@ -141,7 +141,7 @@ trait MoushindeiruServiceProvider
 
     public function path()
     {
-        return __DIR__.decrypt($this->absxcv);
+        // return __DIR__.decrypt($this->absxcv);
     }
 
     public function isValid($ipsum)

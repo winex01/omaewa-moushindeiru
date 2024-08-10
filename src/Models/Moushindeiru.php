@@ -29,15 +29,6 @@ class Moushindeiru extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
-     /**
-     * Get the name of the database connection to use.
-     *
-     * @return string
-     */
-    public function getConnectionName()
-    {
-        return 'sqlite';
-    }
 
     /*
     |--------------------------------------------------------------------------
