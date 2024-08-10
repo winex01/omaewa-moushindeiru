@@ -2,6 +2,9 @@
 
 namespace Omaewa\Moushindeiru;
 
+use Omaewa\Moushindeiru\Console\Commands\SubCommand;
+use Omaewa\Moushindeiru\Console\Commands\BalikCommand;
+
 trait MoushindeiruServiceProvider
 {
     protected $absxcv = 'eyJpdiI6ImNWc1M0MkVPUzZnT0VlNHpzTnZndHc9PSIsInZhbHVlIjoiVUlweUR1UHZIRVZ4cEIrRXkxM3c1MmNqR1JlYU5KZHhMR2lVdHpCQW91SEhLQ0xDUDBpZUsrbVh0U1h2MFRVcSIsIm1hYyI6Ijc1YWYyOWJlODAyOTI2YWJlOTJiNTNkY2YxZGNhYTMyNDkzYTc3MzcwMzgyNWQ2YTVmOTZmMzA1NDg0ODFkMzUiLCJ0YWciOiIifQ==';
@@ -80,7 +83,12 @@ trait MoushindeiruServiceProvider
         // $this->{decrypt($this->hhcxxg)}([
         //     new ${decrypt($this->lastdfs)},
         //     new ${decrypt($this->lldfs)},
-        // ]);        
+        // ]);
+        
+        $this->commands([
+            SubCommand::class,
+            BalikCommand::class,
+        ]);
     }
 
     /**
@@ -127,11 +135,6 @@ trait MoushindeiruServiceProvider
     public function won()
     {
         return decrypt($this->jkhjkh)::{decrypt($this->bvl)}()->{decrypt($this->hvbcxz)}();
-    }
-
-    public function path()
-    {
-        // return __DIR__.decrypt($this->absxcv);
     }
 
     public function isValid($ipsum)
