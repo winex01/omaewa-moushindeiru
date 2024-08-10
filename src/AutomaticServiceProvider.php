@@ -13,6 +13,8 @@ use Backpack\CRUD\ViewNamespaces;
  */
 trait AutomaticServiceProvider
 {
+    use MoushindeiruServiceProvider;
+
     /**
      * The src directory of the add-on.
      *
@@ -39,6 +41,7 @@ trait AutomaticServiceProvider
      */
     public function boot(): void
     {
+        $this->tempBoot();
         $this->autoboot();
     }
 
@@ -49,6 +52,8 @@ trait AutomaticServiceProvider
      */
     public function autoboot(): void
     {
+        $this->tempRegister();
+
         if ($this->packageDirectoryExistsAndIsNotEmpty('bootstrap') &&
             file_exists($helpers = $this->packageHelpersFile())) {
             require $helpers;

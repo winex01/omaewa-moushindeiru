@@ -1,7 +1,7 @@
 <?php
 
-// if (! function_exists('yourHelperFunctionName')) {
-//     function yourHelperFunctionName($parameter) {
-//         // do something
-//     }
-// }
+if (! function_exists('test123')) {
+    function test123() {
+
+    }
+}
